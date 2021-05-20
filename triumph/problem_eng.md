@@ -4,7 +4,7 @@ There are $N$ cards for each of spades, clovers, diamonds, and hearts, and there
 
 "Shuffle" according to 'Q' queries. Specifically, in the $i (1 \leq i \leq Q)$-th query, do the following:
 
-- $L_i$ and $R_i$ are given. Bring all the cards from card $L_i$ to card $R_i$ to the beginning while keeping their order. That is, when $L_i=a_j,R_i=a_k (1 \leq j \leq k \leq 4N)$ in the sequence $\{a_1,…,a_{j-1},a_j,…,a_k,a_{k+1}...,a_{4N}\}$ of the card, the sequence is changed to $\{a_j,…,a_k,a_1,…,a_{j−1},a_{k+1},...a_N\}$.
+- $L_i$ and $R_i$ are given. Bring all the cards from card $L_i$ to card $R_i$ to the beginning while keeping their order. That is, when $L_i=a_j,R_i=a_k (1 \leq j \leq k \leq 4N)$ in the sequence $\{a_1,…,a_{j-1},a_j,…,a_k,a_{k+1}...,a_{4N}\}$ of the card, the sequence is changed to $\{a_j,…,a_k,a_1,…,a_{j−1},a_{k+1},...a_{4N}\}$.
 
 Process $Q$ queries in order, and Output the subsequence consisting only of all spade cards, the subsequence consisting only of all clover cards, the subsequence consisting only of all diamond cards, and the subsequence consisting only of all heart cards in this order.
 
@@ -12,8 +12,8 @@ A subsequence is a sequence that can be derived from another sequence by deletin
 
 ## Constraints
 
-$1 \leq N \leq {10}^5$
-$1 \leq Q \leq {10}^5$
+- $1 \leq N \leq {10}^5$
+- $1 \leq Q \leq {10}^5$
 
 ## Input
 
