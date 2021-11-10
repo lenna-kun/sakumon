@@ -1,7 +1,11 @@
 import bisect
+import sys
+
+sys.setrecursionlimit(10**7)
 
 class MonsterNode:
   def __init__(self, monster):
+    self.is_root = True
     self.monster = monster
     self.stone = 0
     self.group = -1
@@ -25,9 +29,9 @@ g = [MonsterNode(i) for i in range(n)]
 for _ in range(m):
   x, a, b, = map(int, input().split())
   a -= 1; b -= 1
+  g[b].is_root = False
   g[a].evolutions.append(b)
   g[b].stone = x
-
 
 tour_logs = []
 stone_accs = []
@@ -35,7 +39,7 @@ stone_accs = []
 # preprocess
 groups = 0
 for i in range(n):
-  if g[i].group >= 0:
+  if not g[i].is_root:
     continue
   tour_logs.append(list())
   stone_accs.append(list())

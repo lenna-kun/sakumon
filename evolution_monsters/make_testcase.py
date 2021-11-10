@@ -111,8 +111,7 @@ for sample in range(1, 21):
   for e in sampleout_:
     monster, cost = e
     if monster == -1:
-      pass
-      # sampleout_write.append('IMPOSSIBLE\r\n')
+      sampleout_write.append('IMPOSSIBLE\r\n')
     else:
       monster = mapping[monster] + 1
       sampleout_write.append(f'{monster} {cost}\r\n')
