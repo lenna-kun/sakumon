@@ -11,7 +11,7 @@ $i=L,L+1,…,N$について，$a_i$を$(X \times a_i + Y) \mod 1000000007$に置
 _**Note: 各種セグメント木を使わずに解いてください．**_
 
 ## 制約
-- $1 \leq N, Q \leq 10^7$
+- $1 \leq N, Q \leq 10^6$
 - $1 \leq a_i, X, Y \leq 10^9$
 - $1 \leq L_i \leq N (1 \leq i \leq Q)$
 - $L_i \leq L_j (1 \leq i < j \leq Q)$
