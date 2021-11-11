@@ -5,11 +5,11 @@ for sample in range(20, 21):
   samplein = open(f'./sample/in/random{sample}.txt', 'w')
   samplein_write = []
 
-  n = random.randrange(1, 1000001)
+  n = random.randrange(1, 200001)
   a = [random.randrange(1, 1000000001) for _ in range(n)]
 
   before = 1
-  for _ in range(1000000):
+  for _ in range(200000):
     before = before + random.randrange(1)
     if before > n:
       break
@@ -20,5 +20,3 @@ for sample in range(20, 21):
   samplein.writelines(f'{" ".join(map(str, a))}\r\n')
   samplein.writelines(samplein_write)
   samplein.close()
-
-python3 solve.py < sample/in/random5.txt > sample/out/random5.txt

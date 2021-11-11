@@ -44,13 +44,13 @@ P{Q,1} P{Q,2}
 
 ## 出力
 
-i(1 <= i <= Q)行目には，i番目に捕まえたモンスターについて，答えが存在するとき，捕まえたときのレベル以降最初に進化させるときのレベルとその進化における進化後のモンスターの種類を空白区切りで出力し，存在しない時， `IMPOSSIBLE` と出力せよ．
+$i(1 \leq i \leq Q)$行目には，$i$番目に捕まえたモンスターについて，答えが存在するとき，捕まえたときのレベル以降最初の進化における進化後のモンスターの種類と，モンスター$P_{j,1}$をモンスター$P_{j,2}$にするまでにかかるお金を空白区切りで出力し，存在しない時， `IMPOSSIBLE` と出力せよ．
 
 ```
-level_1 monster_1 もしくは IMPOSSIBLE
-level_2 monster_2 もしくは IMPOSSIBLE
+monster_1 cost_1 もしくは IMPOSSIBLE
+monster_2 cost_2 もしくは IMPOSSIBLE
 ...
-level_Q monster_Q もしくは IMPOSSIBLE
+monster_Q cost_3 もしくは IMPOSSIBLE
 ```
 
 ## サンプル
